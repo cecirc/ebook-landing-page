@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/',
+  basePath: '/ebook-landing-page',
   supportedLocales: {
   "en-US": ""
 },
