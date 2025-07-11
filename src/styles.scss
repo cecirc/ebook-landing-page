@@ -1,1 +1,331 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Mouly';
+  src: url('/assets/fonts/Mouly/mouly.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/Mouly/mouly.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/Mouly/mouly.woff2') format('woff2'),
+       url('/assets/fonts/Mouly/mouly.woff') format('woff'),
+       url('/assets/fonts/Mouly/mouly.ttf') format('truetype'),
+       url('/assets/fonts/Mouly/mouly.svg#Mouly') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'General Sans';
+  src: url('/assets/fonts/GeneralSans/GeneralSans-Extralight.woff2') format('woff2'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Extralight.woff') format('woff'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Extralight.ttf') format('truetype'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Extralight.eot');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'General Sans';
+  src: url('/assets/fonts/GeneralSans/GeneralSans-ExtralightItalic.woff2') format('woff2'),
+       url('/assets/fonts/GeneralSans/GeneralSans-ExtralightItalic.woff') format('woff'),
+       url('/assets/fonts/GeneralSans/GeneralSans-ExtralightItalic.ttf') format('truetype'),
+       url('/assets/fonts/GeneralSans/GeneralSans-ExtralightItalic.eot');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'General Sans';
+  src: url('/assets/fonts/GeneralSans/GeneralSans-Light.woff2') format('woff2'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Light.woff') format('woff'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Light.ttf') format('truetype'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Light.eot');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'General Sans';
+  src: url('/assets/fonts/GeneralSans/GeneralSans-LightItalic.woff2') format('woff2'),
+       url('/assets/fonts/GeneralSans/GeneralSans-LightItalic.woff') format('woff'),
+       url('/assets/fonts/GeneralSans/GeneralSans-LightItalic.ttf') format('truetype'),
+       url('/assets/fonts/GeneralSans/GeneralSans-LightItalic.eot');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'General Sans';
+  src: url('/assets/fonts/GeneralSans/GeneralSans-Regular.woff2') format('woff2'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Regular.woff') format('woff'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Regular.ttf') format('truetype'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Regular.eot');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'General Sans';
+  src: url('/assets/fonts/GeneralSans/GeneralSans-Italic.woff2') format('woff2'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Italic.woff') format('woff'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Italic.ttf') format('truetype'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Italic.eot');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'General Sans';
+  src: url('/assets/fonts/GeneralSans/GeneralSans-Medium.woff2') format('woff2'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Medium.woff') format('woff'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Medium.ttf') format('truetype'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Medium.eot');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'General Sans';
+  src: url('/assets/fonts/GeneralSans/GeneralSans-MediumItalic.woff2') format('woff2'),
+       url('/assets/fonts/GeneralSans/GeneralSans-MediumItalic.woff') format('woff'),
+       url('/assets/fonts/GeneralSans/GeneralSans-MediumItalic.ttf') format('truetype'),
+       url('/assets/fonts/GeneralSans/GeneralSans-MediumItalic.eot');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'General Sans';
+  src: url('/assets/fonts/GeneralSans/GeneralSans-Semibold.woff2') format('woff2'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Semibold.woff') format('woff'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Semibold.ttf') format('truetype'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Semibold.eot');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'General Sans';
+  src: url('/assets/fonts/GeneralSans/GeneralSans-SemiboldItalic.woff2') format('woff2'),
+       url('/assets/fonts/GeneralSans/GeneralSans-SemiboldItalic.woff') format('woff'),
+       url('/assets/fonts/GeneralSans/GeneralSans-SemiboldItalic.ttf') format('truetype'),
+       url('/assets/fonts/GeneralSans/GeneralSans-SemiboldItalic.eot');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'General Sans';
+  src: url('/assets/fonts/GeneralSans/GeneralSans-Bold.woff2') format('woff2'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Bold.woff') format('woff'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Bold.ttf') format('truetype'),
+       url('/assets/fonts/GeneralSans/GeneralSans-Bold.eot');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'General Sans';
+  src: url('/assets/fonts/GeneralSans/GeneralSans-BoldItalic.woff2') format('woff2'),
+       url('/assets/fonts/GeneralSans/GeneralSans-BoldItalic.woff') format('woff'),
+       url('/assets/fonts/GeneralSans/GeneralSans-BoldItalic.ttf') format('truetype'),
+       url('/assets/fonts/GeneralSans/GeneralSans-BoldItalic.eot');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Estilos customizados */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-black text-center font-general text-[28px] font-medium leading-[130%] not-italic;
+  }
+  p, span, li, ul, ol, a {
+    @apply text-black font-general text-[20px] font-medium leading-[130%] not-italic;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-200 hover:bg-secondary-300 text-secondary-800 font-semibold py-3 px-6 rounded-lg transition-colors duration-200;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fade-up 0.8s cubic-bezier(0.4,0,0.2,1) both;
+  }
+  @keyframes fade-up {
+    0% { opacity: 0; transform: translateY(40px);}
+    100% { opacity: 1; transform: translateY(0);}
+  }
+}
+
+*::selection {
+  background: #d6ff8c;
+  color: #0A0A0A;
+}
+
+
+
+// Utilitários customizados para padrões do projeto
+
+.titulo-mouly {
+  text-align: center;
+  color: #0A66C2;
+  font-family: 'Mouly', cursive;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112%;
+  margin-bottom: 32px;
+}
+
+.titulo-general {
+  width: 100%;
+  text-align: center;
+  color: #0A66C2;
+  font-family: 'General Sans', sans-serif;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 112%;
+}
+
+.card-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card-feature-icone {
+  background: #F1FFD6;
+  border-radius: 0.75rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+.card-feature-titulo {
+  color: #000;
+  text-align: center;
+  font-family: 'General Sans', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  margin-bottom: 0.25rem;
+}
+.card-feature-texto {
+  color: rgba(0, 0, 0, 0.80);
+  text-align: center;
+  font-family: 'General Sans', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.texto-destaque {
+  color: #000;
+  font-family: 'General Sans', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+.texto-destaque-azul {
+  color: #0A66C2;
+  font-family: 'General Sans', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.box-oferta {
+  background: #1877E5;
+  border-radius: 0.75rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  max-width: 370px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 10px 24px 0 rgba(24, 119, 229, 0.15);
+}
+.preco-antigo {
+  color: #F1FFD6;
+  font-size: 20px;
+  font-family: 'General Sans', sans-serif;
+  text-decoration: line-through;
+}
+.preco-novo {
+  color: #F1FFD6;
+  font-size: 40px;
+  font-family: 'General Sans', sans-serif;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.btn-cta {
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.2s;
+  width: 100%;
+  justify-content: center;
+}
+.btn-cta:hover {
+  background: #222;
+}
+
+.footer-link {
+  color: #222;
+  font-size: 1.25rem;
+  transition: color 0.2s;
+}
+.footer-link:hover {
+  color: #0A66C2;
+}
+
+.general-sans-font {
+  font-family: 'General Sans', sans-serif;
+}
+
+@media (max-width: 767px) {
+  .min-h-hero-mobile {
+    min-height: calc(100vh - 60px - 40px);
+  }
+}

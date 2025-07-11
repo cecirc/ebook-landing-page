@@ -1,0 +1,12 @@
+.mobile-image-container {
+  width: calc(100% + 65px);
+  transform: translateX(-30px);
+}
+
+// Fallback para desktop - remove o efeito
+@media (min-width: 768px) {
+  .mobile-image-container {
+    width: 100%;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,41 @@
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container-custom flex items-center justify-between p-4 h-[60px] relative">
+    <!-- Botão hamburger (mobile only) -->
+    <button
+      class="md:hidden flex items-center justify-center w-10 h-10 focus:outline-none absolute left-4 top-1/2 -translate-y-1/2"
+      aria-label="Abrir menu"
+      (click)="openMobileMenu()"
+      *ngIf="!isMobileMenuOpen"
+    >
+      <img src="/assets/icons/icon-menu-hamburger.svg" alt="Menu" width="32" height="32" class="pointer-events-none" />
+    </button>
+
+    <!-- Menu de navegação (desktop) -->
+    <ul class="hidden md:flex gap-6 text-base font-medium general-sans-font justify-center items-center whitespace-nowrap w-auto mx-auto">
+      <li><a href="#hero" class="hover:text-primary-600 transition-colors duration-200">Início</a></li>
+      <li><a href="#ebook" class="hover:text-primary-600 transition-colors duration-200">Sobre o eBook</a></li>
+      <li><a href="#aprender" class="hover:text-primary-600 transition-colors duration-200">O que você irá aprender</a></li>
+      <li><a href="#quem-sou-eu" class="hover:text-primary-600 transition-colors duration-200">Quem sou eu</a></li>
+      <li><a href="#oferta" class="hover:text-primary-600 transition-colors duration-200">Oferta</a></li>
+    </ul>
+
+    <!-- Overlay e menu mobile --> 
+    <div *ngIf="isMobileMenuOpen" class="fixed inset-0 z-50 flex">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-40 transition-opacity duration-200" (click)="closeMobileMenu()"></div>
+      <!-- Drawer -->
+      <nav class="relative w-64 max-w-[80vw] h-full bg-white shadow-lg flex flex-col p-6 animate-slide-in items-start">
+        <button class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded hover:bg-gray-100 transition" aria-label="Fechar menu" (click)="closeMobileMenu()">
+          <span class="block w-6 h-6 text-3xl leading-none">&times;</span>
+        </button>
+        <ul class="flex flex-col gap-6 text-lg font-medium general-sans-font w-full mt-12 items-start">
+          <li class="w-full"><a href="#hero" (click)="closeMobileMenu()" class="hover:text-primary-600 transition-colors duration-200 block w-full text-left">Início</a></li>
+          <li class="w-full"><a href="#ebook" (click)="closeMobileMenu()" class="hover:text-primary-600 transition-colors duration-200 block w-full text-left">Sobre o eBook</a></li>
+          <li class="w-full"><a href="#aprender" (click)="closeMobileMenu()" class="hover:text-primary-600 transition-colors duration-200 block w-full text-left">O que você irá aprender</a></li>
+          <li class="w-full"><a href="#quem-sou-eu" (click)="closeMobileMenu()" class="hover:text-primary-600 transition-colors duration-200 block w-full text-left">Quem sou eu</a></li>
+          <li class="w-full"><a href="#oferta" (click)="closeMobileMenu()" class="hover:text-primary-600 transition-colors duration-200 block w-full text-left">Oferta</a></li>
+        </ul>
+      </nav>
+    </div>
+  </nav>
+</header>

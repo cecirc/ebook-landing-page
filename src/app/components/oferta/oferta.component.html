@@ -1,0 +1,35 @@
+<section id="oferta" class="min-h-[100vh] md:min-h-[60vh] w-full py-16 bg-white flex-col overflow-hidden scroll-mt-16" appScrollReveal [parallaxStrength]=40 [elementWeight]="'HEAVY'">
+  <div class="w-full max-w-6xl mx-auto px-5 md:px-0">
+    <div class="mb-8 w-full lg:max-w-[520px]">
+      <h2 class="titulo-general" appScrollReveal [parallaxStrength]=60 [elementWeight]="'HEAVY'">
+        Transforme sua carreira<br/>
+        agora, <strong>garanta seu guia<br/>exclusivo!</strong>
+      </h2>
+    </div>
+  </div>
+  <div class="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+    <!-- Coluna Esquerda: Texto + Círculo/Livro -->
+    <div class="flex flex-col items-start">
+      <div class="ebook-bg-container self-start">
+        <img src="/assets/images/capa-ebook.png" alt="Capa do e Book" class="relative z-20 w-[393px] md:w-[393px] drop-shadow-xl pointer-events-none" appScrollReveal [parallaxStrength]=30 [elementWeight]="'HEAVY'" />
+      </div>
+    </div>
+    <!-- Coluna Direita: Box de oferta -->
+    <div class="box-oferta self-start mb-12 flex flex-col gap-[20px]">
+      <div class="w-full text-righ flex flex-col gap-2 justify-center items-center">
+        <span class="preco-antigo" appScrollReveal [parallaxStrength]=10 [elementWeight]="'LIGHT'">R$44,90</span>
+        <span class="preco-novo" appScrollReveal [parallaxStrength]=20 [elementWeight]="'MEDIUM'">R$39,90</span>
+        <div class="rabisco-preco-bg"></div>
+      </div>
+      <ul class="lista-oferta">
+        <li appScrollReveal [parallaxStrength]=10 [elementWeight]="'LIGHT'"><span class="icone-check"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span> 111 páginas, 6 capítulos</li>
+        <li appScrollReveal [parallaxStrength]=10 [elementWeight]="'LIGHT'"><span class="icone-check"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span> Páginas ilustrativas</li>
+        <li appScrollReveal [parallaxStrength]=10 [elementWeight]="'LIGHT'"><span class="icone-check"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span> Recomendações de ferramentas</li>
+      </ul>
+      <button class="btn-cta" appScrollReveal [parallaxStrength]=20 [elementWeight]="'MEDIUM'">
+        <img src="/assets/icons/icon-shopping-cart.svg" alt="Carrinho" width="20" height="20" class="inline-block mr-2 pointer-events-none align-middle" />
+        Adquirir E-Book
+      </button>
+    </div>
+  </div>
+</section>

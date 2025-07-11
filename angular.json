@@ -27,6 +27,21 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "assets"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/fonts",
+                "output": "assets/fonts"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/icons",
+                "output": "assets/icons"
               }
             ],
             "styles": [
@@ -90,6 +105,16 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "assets"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/fonts",
+                "output": "assets/fonts"
               }
             ],
             "styles": [
@@ -99,5 +124,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b7a2d949-acdc-4afc-b992-3567e2acdb53"
   }
 }
