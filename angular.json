@@ -55,6 +55,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/ebook-landing-page/",
               "budgets": [
                 {
                   "type": "initial",
